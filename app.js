@@ -48,13 +48,17 @@ function checkBirthdayLucky ()
             else 
             { 
                 hiddenText.style.display = "block";
-                hiddenText.innerText = "Oops. Never Mind. Birthdate is not matching with lucky number."; 
+                hiddenText.innerText = "Oops. Birthdate is not matching with lucky number."; 
                 hiddenText.style.color = "white";
                 hiddenText.style.backgroundColor = "orange";
                 bodyNew.style.backgroundColor = "white";
                 // bodyNew.style.backgroundImage = "url(assets/sorry.png)";
                 bodyMain.style.backgroundColor = "white";
-                bodyMain.style.color = "white";
+                imageResult.style.backgroundImage = "url(assets/ohnocolored.jpg)";
+                imageResult.style.backgroundRepeat = "no-repeat";
+                imageResult.style.textAlign = "center";
+                
+                // bodyMain.style.color = "white";
             }
             
         }
@@ -68,6 +72,9 @@ function checkBirthdayLucky ()
             bodyNew.style.backgroundColor = "white";
             // bodyNew.style.backgroundImage = "url(assets/sorry.png)";
             bodyMain.style.backgroundColor = "white";
+            imageResult.style.backgroundImage = "url(assets/ohnocolored.jpg)";
+            imageResult.style.backgroundRepeat = "no-repeat";
+            imageResult.style.textAlign = "center";
              
         }
         

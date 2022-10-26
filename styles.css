@@ -59,6 +59,8 @@ body {
     width:fit-content; 
     margin: auto;
     padding: 1rem;
+    font-size: larger;
+    font-style: bold;
 
 }
 
@@ -104,4 +106,5 @@ span {
     background-image: url("assets/curiousbgsized.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    padding: 2rem;
 }
