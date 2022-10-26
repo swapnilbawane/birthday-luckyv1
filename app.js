@@ -39,7 +39,7 @@ function checkBirthdayLucky ()
                 hiddenText.style.color = "white";
                 hiddenText.style.backgroundColor = "green";
                 bodyNew.style.backgroundColor = "white";
-                bodyNew.style.backgroundImage = "url(assets/party2.jpg)";
+                bodyNew.style.backgroundImage = "url(assets/party4.png)";
                 bodyMain.style.backgroundColor = "white";
             }
             else { 
