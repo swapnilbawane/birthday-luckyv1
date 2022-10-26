@@ -1,5 +1,5 @@
 :root {
-    --primary-color: bisque;
+    --primary-color: #ffe4c4;
 }
 
 body { 
@@ -56,7 +56,7 @@ body {
     border: solid black 1px;;
     border-radius: 0.5rem;
     text-align: center;
-    width: 50%; 
+    width:fit-content; 
     margin: auto;
     padding: 1rem;
 
@@ -75,6 +75,7 @@ body {
 .footer { 
     text-align: center;
     padding: 3rem;
+    background-color: whitesmoke;
 }
 
 .footer ul li a { 
@@ -89,8 +90,18 @@ body {
 #privacy { 
     font-size: larger;
     padding: 1rem;
+    text-align: center;
 }
 
 span { 
     color: red;
+}
+
+#image-result { 
+    display: block;
+    margin: auto;
+    height: 350px;
+    background-image: url("assets/curiousbgsized.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
