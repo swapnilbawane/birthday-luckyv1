@@ -12,7 +12,7 @@ const bodyNew = document.querySelector("body");
 const imageResult = document.querySelector("#image-result"); 
 
 
-let sum = 0; 
+
 
 function checkBirthdayLucky ()
 { 
@@ -23,7 +23,7 @@ function checkBirthdayLucky ()
         
         { 
             let birthDateString = dateInput.value.replaceAll("-","");
-        
+            let sum = 0; 
           
             for ( let index=0; index<birthDateString.length; index++)
             { 
