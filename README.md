@@ -11,4 +11,11 @@ It also takes input of the user's lucky number.
 It calculates if the birthday is lucky and displays the message if it’s lucky or not. 
 It displays a privacy notice at the end which says it’s not storing the data. 
 
-![Screenshot of web page](https://github.com/swapnilbawane/markeleven-swapnil/blob/assets/screenshot-markeleven.jpg?raw=true)
+Home Page:
+![Home page](https://github.com/swapnilbawane/birthday-luckyv1/blob/main/screenshot/m11-home.png?raw=true)
+
+Lucky number page: 
+![Lucky number page](https://github.com/swapnilbawane/birthday-luckyv1/blob/main/screenshot/m11-lucky.png?raw=true)
+
+Not Lucky number page: 
+![Not Lucky number page](https://github.com/swapnilbawane/birthday-luckyv1/blob/main/screenshot/m11-nl.png?raw=true)
