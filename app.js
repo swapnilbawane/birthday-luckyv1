@@ -1,84 +1,66 @@
-const dateInput = document.querySelector("#date-input"); 
+const dateInput = document.querySelector("#date-input");
 
 const luckyNumber = document.querySelector("#lucky-number");
 
 const btnCheck = document.querySelector("#btn-check");
 
-const hiddenText = document.querySelector("#hidden-text"); 
+const hiddenText = document.querySelector(".hidden-text");
 
 // Refactor: 
 const bodyMain = document.querySelector(".b");
 const bodyNew = document.querySelector("body");
-const imageResult = document.querySelector("#image-result"); 
+const imageResult = document.querySelector(".image-result");
 
+function checkBirthdayLucky() {
+  {
+    if (dateInput.value && luckyNumber.value > 0) {
+      let birthDateString = dateInput.value.replaceAll("-", "");
+      let sum = 0;
 
+      for (let index = 0; index < birthDateString.length; index++) {
+        sum = sum + Number(birthDateString.charAt(index));
+      }
 
+      if (sum % luckyNumber.value === 0) {
 
-function checkBirthdayLucky ()
-{ 
-    {
-       
-        
-        if( dateInput.value&&luckyNumber.value>0)
-        
-        { 
-            let birthDateString = dateInput.value.replaceAll("-","");
-            let sum = 0; 
-          
-            for ( let index=0; index<birthDateString.length; index++)
-            { 
-                sum = sum + Number(birthDateString.charAt(index));     
-            }
-        
-            if(sum%luckyNumber.value===0) 
-            { 
-                hiddenText.style.display = "block";
-                hiddenText.innerText = "Your Birthday is Lucky"; 
-                hiddenText.style.color = "white";
-                hiddenText.style.backgroundColor = "green";
+        hiddenText.classList.add("luckymessage");
+        hiddenText.innerText = "Your Birthday is Lucky";
 
-                bodyNew.style.backgroundColor = "white";
-                // bodyNew.style.backgroundImage = "url(assets/party4.png)";
-                imageResult.style.backgroundImage = "url(assets/party4.png)";
-                imageResult.style.backgroundRepeat = "no-repeat";
-                imageResult.style.textAlign = "center";
-                bodyMain.style.backgroundColor = "white";
-            }
+        bodyNew.style.backgroundColor = "white";
+        bodyMain.style.backgroundColor = "white";
 
-            else 
-            { 
-                hiddenText.style.display = "block";
-                hiddenText.innerText = "Oops. Birthdate is not matching with lucky number."; 
-                hiddenText.style.color = "white";
-                hiddenText.style.backgroundColor = "orange";
-                bodyNew.style.backgroundColor = "white";
-                // bodyNew.style.backgroundImage = "url(assets/sorry.png)";
-                bodyMain.style.backgroundColor = "white";
-                imageResult.style.backgroundImage = "url(assets/ohnocolored.jpg)";
-                imageResult.style.backgroundRepeat = "no-repeat";
-                imageResult.style.textAlign = "center";
-                
-                // bodyMain.style.color = "white";
-            }
-            
-        }
-        
-        else 
-        { 
-            hiddenText.style.display = "block";
-            hiddenText.innerText = "Please enter both the fields correctly.";
-            hiddenText.style.color = "white";
-            hiddenText.style.backgroundColor = "red";
-            bodyNew.style.backgroundColor = "white";
-            // bodyNew.style.backgroundImage = "url(assets/sorry.png)";
-            bodyMain.style.backgroundColor = "white";
-            imageResult.style.backgroundImage = "url(assets/ohnocolored.jpg)";
-            imageResult.style.backgroundRepeat = "no-repeat";
-            imageResult.style.textAlign = "center";
-             
-        }
-        
-        }
+        imageResult.classList.add("luckyimage");
+        imageResult.classList.remove("image-result");
+
+      }
+
+      else {
+
+        hiddenText.classList.add("notsoluckymessage");
+        hiddenText.innerText = "Oops. Birthdate is not matching with lucky number.";
+
+        bodyNew.style.backgroundColor = "white";
+        bodyMain.style.backgroundColor = "white";
+
+        imageResult.classList.add("notsoluckyimage");
+        imageResult.classList.remove("image-result");
+      }
+
+    }
+
+    else {
+
+      hiddenText.classList.add("incorrectinputtext");
+      hiddenText.innerText = "Please enter both the fields correctly.";
+
+      bodyNew.style.backgroundColor = "white";
+      bodyMain.style.backgroundColor = "white";
+
+      imageResult.classList.add("incorrectimage");
+        imageResult.classList.remove("image-result");
+    }
+
+  }
 }
 
-btnCheck.addEventListener("click", checkBirthdayLucky);  
+btnCheck.addEventListener("click", checkBirthdayLucky);
