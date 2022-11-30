@@ -58,20 +58,6 @@ body {
     padding: 0.5rem;
 }
 
-#hidden-text { 
-    border: solid black 1px;;
-    border-radius: 0.5rem;
-
-    text-align: center;
-    width:fit-content; 
-
-    margin: auto;
-    padding: 1rem;
-
-    font-size: larger;
-    font-style: bold;
-}
-
 .list-non-bullet { 
     list-style: none;
     padding-inline-start: 0px;
@@ -107,12 +93,105 @@ span {
     color: var(--red);
 }
 
-#image-result { 
+.image-result { 
     display: block;
     margin: auto;
     height: 350px;
-    background-image: url("assets/curiousbgsized.jpg");
-    background-repeat: no-repeat;
     background-position: center;
     padding: 2rem;
+  
+    background-image: url("https://github.com/swapnilbawane/birthday-luckyv1/blob/main/assets/curiousbgsized.jpg?raw=true");
+    background-repeat: no-repeat;
+    
+}
+
+.luckyimage {
+   display: block;
+    margin: auto;
+    height: 350px;
+    background-position: center;
+    padding: 2rem;
+  
+  background-image: url("https://github.com/swapnilbawane/birthday-luckyv1/blob/main/assets/party4.png?raw=true");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.notsoluckyimage{
+ display: block;
+    margin: auto;
+    height: 350px;
+    background-position: center;
+    padding: 2rem;
+  
+background-image: url("https://github.com/swapnilbawane/birthday-luckyv1/blob/main/assets/ohnocolored.jpg?raw=true");
+background-repeat: no-repeat;
+text-align: center;
+}
+
+.incorrectimage {
+  display: block;
+    margin: auto;
+    height: 350px;
+    background-position: center;
+    padding: 2rem;
+  
+  background-image: url("https://github.com/swapnilbawane/birthday-luckyv1/blob/main/assets/ohnocolored.jpg?raw=true");
+      background-repeat: no-repeat;
+      text-align: center;
+}
+
+.luckymessage {
+        
+  display: block;
+  color: white;
+  background-color: green;
+
+    border: solid black 1px;;
+    border-radius: 0.5rem;
+
+    text-align: center;
+    width:fit-content; 
+
+    margin: auto;
+    padding: 1rem;
+
+    font-size: larger;
+    font-style: bold;
+}
+
+.notsoluckymessage {
+   display: block; 
+   color: white;
+    background-color: orange;
+
+  border: solid black 1px;;
+    border-radius: 0.5rem;
+
+    text-align: center;
+    width:fit-content; 
+
+    margin: auto;
+    padding: 1rem;
+
+    font-size: larger;
+    font-style: bold;
+}
+
+.incorrectinputtext {
+  display: block;
+      color: white;
+      background-color: red;
+
+  border: solid black 1px;;
+    border-radius: 0.5rem;
+
+    text-align: center;
+    width:fit-content; 
+
+    margin: auto;
+    padding: 1rem;
+
+    font-size: larger;
+    font-style: bold;
 }
